@@ -6,13 +6,13 @@ from app.cinema.hall import CinemaHall
 
 def cinema_visit(
         customers: list,
-        number: int,
+        hall_number: int,
         cleaner: str,
         movie: str
 ) -> None:
     # write you code here
     cleaner_obj = Cleaner(name=cleaner)
-    hall_obj = CinemaHall(number=number)
+    hall_obj = CinemaHall(hall_number=hall_number)
     customers_obj = []
     for cus in customers:
         new_customer = Customer(name=cus["name"], food=cus["food"])
