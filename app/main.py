@@ -12,7 +12,7 @@ def cinema_visit(
 ) -> None:
     # write you code here
     cleaner_obj = Cleaner(name=cleaner)
-    hall_obj = CinemaHall(hall_number=hall_number)
+    hall_obj = CinemaHall(number=hall_number)
     customers_obj = []
     for cus in customers:
         new_customer = Customer(name=cus["name"], food=cus["food"])
